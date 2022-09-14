@@ -12,72 +12,47 @@ body {
 }
 
 button,
-form input {
+input {
     outline: none;
 }
 
 .header,
-.todo-area {
+.todo-form {
     width: 100%;
     text-align: center;
 }
 
 .header,
-form {
+#todo-form {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-form input,
-form button {
+input,
+button {
     font-size: 1.5rem;
     padding: 0.5rem;
     border: none;
     background: #fff;
 }
 
-form button {
+button {
     color: #83677b;
     transition: .3s;
     cursor: pointer;
 }
 
-form button:hover {
+button:hover {
     background: #501b1d;
     color: #fff;
 }
 
-select {
-    appearance: none;
-    border: none;
-    outline: none;
-    padding: 0.9rem;
-    width: 10rem;
-    cursor: pointer;
-
-}
-
-#select {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-
-#select::after {
-    content: "\25BC";
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #83677b;
-    color: #fff;
-    pointer-events: none;
-    padding: 0.7rem;
-    transition: all 0.3s ease;
-}
-
-#select:hover::after {
-    background: #fff;
-    color: #501b1d;
+#list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    flex-direction: column;
 }

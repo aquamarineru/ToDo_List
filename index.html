@@ -15,24 +15,14 @@
     <div class="header">
         <h1>ToDo List</h1>
     </div>
-    <div class="todo-area">
-        <form action="">
-            <input type="text" name="text" id="todoinput">
-            <button id="todobutton" type="submit">
-                <i class="fas fa-plus-square"></i>
-            </button>
-            <div id="select">
-                <select name="todos" id="todoselect">
-                    <option value="active">Active</option>
-                    <option value="completed">Completed</option>
-                    <option value="uncompleted">Uncompleted</option>
-                </select>
-            </div>
-        </form>
+    <div id="todo-form">
+
+        <input type="text" id="input" placeholder="add your list">
+        <button id="btn" type="button">
+            <i class="fas fa-plus-square"></i>
+        </button>
     </div>
-    <div class="todo-container">
-        <ul id="todolist"></ul>
-    </div>
+    <ol id="list"></ol>
 
 
     <script src="index.js"></script>

@@ -1,16 +1,47 @@
-const todoInput = document.getElementById("todoinput");
-const todoButton = document.getElementById("todobutton");
-const todoList = document.getElementById("todolist");
-const filterOption = document.getElementById("todoselect")
+//---------------Selectors-----------------------//
+const input = document.querySelector("#input");
+const btn = document.querySelector("#btn");
+const list = document.querySelector("#list");
 
-todoButton.addEventListener("click", addTodo);
+btn.addEventListener('click', addTodoHandler)
 
-function addTodo(event) {
-    event.preventDefault();
+todos = [];
 
-    const todoDiv = document.createElement("div");
+function addTodoHandler() {
+    let val = input.value;
+    console.log(val);
+    input.value = '';
 
-    todoDiv.classList.add("todo");
+    todos.push(val);
+    console.log(todos);
+
+    addTodo()
+}
+function addTodo() {
+    let value = '';
+    for (const todo of todos) {
+        value = todo;
+    }
+    list.innerHTML += `
+        <li>${value}</li>
+    `;
 
 }
+
+
+
+
+
+/* function addTodo(event) {
+
+      console.log(event.target.value)
+       console.log(todoInput.value) 
+   if (event.key === "Enter") {
+       myWeekTodo.push(todoInput.value)
+       console.log(myWeekTodo)
+       input.value = "";
+
+console.log("Done!");
+
+ */
 
