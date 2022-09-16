@@ -56,3 +56,22 @@ button:hover {
     transition: all 0.5s ease;
     flex-direction: column;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    padding: 4px 8px;
+    border: 1px solid #501b1d;
+    text-transform: capitalize;
+    z-index: 5;
+    color: #501b1d
+}
+
+#total {
+    margin-bottom: 50px;
+}
